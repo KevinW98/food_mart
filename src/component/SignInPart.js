@@ -1,6 +1,7 @@
 import React from "react";
 import {withStyles} from "@material-ui/core/styles";
 import {Input,TextField,Button} from "@material-ui/core";
+import {signInWithGoogle} from "../firebase/firebase.utils";
 
 class signInPart extends React.Component{
     constructor(props){
@@ -49,6 +50,8 @@ class signInPart extends React.Component{
                         className={classes.inputStyle}></TextField>
                    <br/>
                     <Button className={classes.submitInput}  type='submit'>Sign In</Button>
+                    <Button className={classes.signWithGoogle} onClick={signInWithGoogle}
+                            >Sign In With Google</Button>
                 </form>
             </div>
         )
@@ -84,12 +87,21 @@ const signInComponentStyle ={
         fontFamily: 'Amatic SC, cursive',
         paddingBottom:'12%'
     },
+    signWithGoogle:{
+        position:'absolute',
+        fontFamily:'Indie Flower ,cursive',
+        fontWeight:'600',
+        fontSize:'13px',
+        left:'110%',
+        width:'120%',
+        bottom:'-25%'
+    },
     submitInput:{
         position:'relative',
         fontFamily:'Indie Flower ,cursive',
         fontWeight:'600',
         paddingTop:'10%',
-        fontSize:'24px',
+        fontSize:'20px',
         marginTop:'10%',
         left:'140%'
     },

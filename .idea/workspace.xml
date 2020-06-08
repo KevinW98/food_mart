@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8061d4c-c8ce-4e32-a0b9-d5ef4a00a3fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/categories/beveragesPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/categories/breads.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/categories/diaryPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/categories/preparedFoodPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/categories/snacksPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/SignInPart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homepage.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/beverages.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/breads.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/diary.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/preparedFood.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/snacks.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/signIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shop.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/firebase/firebase.utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/SignInPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/SignInPart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,7 +97,7 @@
       <workItem from="1591481121570" duration="23000" />
       <workItem from="1591481171414" duration="752000" />
       <workItem from="1591482292716" duration="12416000" />
-      <workItem from="1591599958494" duration="367000" />
+      <workItem from="1591599958494" duration="2636000" />
     </task>
     <servers />
   </component>
@@ -140,7 +122,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/component/SignInPart.js</url>
-          <line>81</line>
+          <line>84</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

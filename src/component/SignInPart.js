@@ -1,7 +1,7 @@
 import React from "react";
 import {withStyles} from "@material-ui/core/styles";
 import {Input,TextField,Button} from "@material-ui/core";
-import {signInWithGoogle} from "../firebase/firebase.utils";
+import {signInWithGoogle,auth} from "../firebase/firebase.utils";
 
 class signInPart extends React.Component{
     constructor(props){
@@ -12,22 +12,27 @@ class signInPart extends React.Component{
         }
     }
 
-    handleSubmit = event =>{
+    handleSubmit = async event =>{
         event.preventDefault();
-        this.setState({email:'',password:''})
+        const{email,password}=this.state;
+        try{
+            await auth.signInWithEmailAndPassword(email,password);
+            this.setState({email:'',password:''});
+        }catch (error) {
+            console.log(error);
+        }
+
     }
 
-    handlePasswordChange = event =>{
-        this.setState({password:event.target.value})
-    }
-
-    handleEmailChange = event =>{
-        this.setState({email:event.target.value})
+    handleChange = event =>{
+        const {id,value} = event.target;
+        this.setState({[id]:value});
     }
 
 
     render() {
         const {classes} = this.props;
+        const{email,password}=this.state;
         return(
             <div >
                 <h2 className={classes.instructionStyle}> I already have an account</h2>
@@ -38,7 +43,8 @@ class signInPart extends React.Component{
                         id = 'email'
                         type='email'
                         color='primary'
-                        onChange={this.handleEmailChange}
+                        onChange={this.handleChange}
+                        value={email}
                         className={classes.inputStyle}></TextField>
                     <br/>
                     <span className={classes.labelPasswordStyle}>Password :</span>
@@ -46,7 +52,8 @@ class signInPart extends React.Component{
                         id = 'password'
                         color='primary'
                         type='password'
-                        onChange={this.handlePasswordChange}
+                        value={password}
+                        onChange={this.handleChange}
                         className={classes.inputStyle}></TextField>
                    <br/>
                     <Button className={classes.submitInput}  type='submit'>Sign In</Button>
@@ -64,7 +71,7 @@ const signInComponentStyle ={
     instructionStyle:{
         position:'absolute',
         top:'25%',
-        left:'14%',
+        left:'20%',
         fontSize:'25px',
         fontFamily: 'Amatic SC, cursive;',
     },
@@ -73,19 +80,20 @@ const signInComponentStyle ={
         position:'absolute',
         width:'90%',
         top: '35%',
-        left: '11%'
+        left: '17%'
     },
     formStyle:{
         position:'absolute',
-        top:'45%',
-        left:'7%'
+        top:'48%',
+        left:'12%'
     },
     inputStyle:{
       position:'relative',
-        left:'70%',
-        width:'110%',
+        left:'100%',
+        width:'120%',
         fontFamily: 'Amatic SC, cursive',
-        paddingBottom:'12%'
+        paddingBottom:'18%',
+        paddingTop: '10%',
     },
     signWithGoogle:{
         position:'absolute',
@@ -115,7 +123,7 @@ const signInComponentStyle ={
     labelPasswordStyle:{
         fontFamily:'Architects Daughter,cursive',
         position:'absolute',
-        bottom:'52%',
+        bottom:'44%',
         left:'7%',
         fontSize: '18px'
     }

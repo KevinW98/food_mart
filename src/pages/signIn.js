@@ -1,6 +1,7 @@
 import React from "react";
 import {makeStyles} from "@material-ui/core/styles";
 import SignInPart from "../component/SignInPart";
+import SignUp from "../component/SignUp";
 
 export default function signIn() {
     const classes = signPageStyle();
@@ -8,6 +9,7 @@ export default function signIn() {
         <div>
             <br/><br/>
                 <SignInPart></SignInPart>
+                <SignUp/>
         </div>
     )
 }

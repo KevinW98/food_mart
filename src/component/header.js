@@ -4,8 +4,9 @@ import {Link} from "react-router-dom";
 import HomeIcon from '@material-ui/icons/Home';
 import {Button} from "@material-ui/core";
 import {auth} from "../firebase/firebase.utils";
+import {connect} from 'react-redux';
 
-export default function Header({currUser}){
+const Header =({currentUser})=>{
     const classes = headerStyle();
     return(
         <div>
@@ -13,7 +14,7 @@ export default function Header({currUser}){
                 <HomeIcon className={classes.homeIcon}/>
             </Link>
             <div>
-                {currUser ?
+                {currentUser ?
                     <Button onClick={()=>auth.signOut()} className={classes.signIn}>Sign Out</Button>
                     :
                     <Link to='signIn'>
@@ -48,3 +49,9 @@ const headerStyle = makeStyles({
         fontFamily:'Architects Daughter,cursive'
     }
 })
+
+const mapStateToProps = state =>({
+    currentUser:state.user.currentUser
+})
+
+export default connect(mapStateToProps)(Header);

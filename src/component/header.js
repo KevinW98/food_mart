@@ -1,15 +1,17 @@
 import React from "react";
 import {makeStyles} from "@material-ui/core/styles";
 import {Link} from "react-router-dom";
-import HomeIcon from '@material-ui/icons/Home';
+import HomeIcon from '@material-ui/icons/HomeOutlined';
 import {Button} from "@material-ui/core";
 import {auth} from "../firebase/firebase.utils";
 import {connect} from 'react-redux';
+import CartIcon from "./CartIcon";
+import Cart from "./cart";
 
-const Header =({currentUser})=>{
+const Header =({currentUser,hidden})=>{
     const classes = headerStyle();
     return(
-        <div>
+            <div>
             <Link to='/'>
                 <HomeIcon className={classes.homeIcon}/>
             </Link>
@@ -21,8 +23,12 @@ const Header =({currentUser})=>{
                     <Button className={classes.signIn} >Sign in</Button></Link>}
             </div>
             <div>
-                <h4 className={classes.contact}>Contact</h4>
+                <Button className={classes.contact}>Contact</Button>
             </div>
+          <CartIcon/>
+                {
+                    hidden||!currentUser ? null: <Cart/>
+                }
         </div>
 
     )
@@ -39,19 +45,23 @@ const headerStyle = makeStyles({
     signIn:{
       position: 'absolute',
         top: '4%',
-        right:'6%',
+        right:'10%',
         fontFamily:'Architects Daughter,cursive',
+        color:'#757575'
     },
     contact:{
         position: 'absolute',
-        top: '2%',
-        right: '15%',
-        fontFamily:'Architects Daughter,cursive'
+        top: '4%',
+        right: '17%',
+        fontFamily:'Architects Daughter,cursive',
+        color:'#757575'
     }
+
 })
 
-const mapStateToProps = state =>({
-    currentUser:state.user.currentUser
+const mapStateToProps = ({user:{currentUser},cart:{hidden}})=>({
+    currentUser,
+    hidden
 })
 
 export default connect(mapStateToProps)(Header);

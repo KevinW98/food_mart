@@ -27,7 +27,7 @@ const CheckoutPage=({cartItems,total})=> {
 
 
          {cartItems.map((eachItem)=>{
-             return(<CheckoutItem item={eachItem}/>)
+             return(<CheckoutItem cartItem={eachItem}/>)
          })}
      </div>
          <div className={classes.totalStyle}>Total:${total}</div>

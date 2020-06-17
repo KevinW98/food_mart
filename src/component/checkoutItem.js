@@ -3,24 +3,24 @@ import {makeStyles} from "@material-ui/core/styles";
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import {connect} from "react-redux";
+import {addItem,removeItem,clearItem} from "../redux/cart/cart.actions";
 
 
 
-function handleRightClick(quantity){
-    quantity++;
-}
 
-const CheckoutItem = ({item:{imageUrl,price,itemId,quantity,name}})=>{
+const CheckoutItem = ({cartItem,addItem,removeItem,clearItem})=>{
+    const{name,imageUrl,price,quantity}=cartItem;
     const classes = checkoutItemStyle();
     return(
         <div className={classes.rowStyle}>
             <img src={imageUrl} className={classes.imageStyle}></img>
             <span className={classes.propertyStyle}>{name}</span>
             <span className={classes.propertyStyle}>${price}</span>
-            <ArrowLeftIcon className={classes.arrowLeft}/>
+            <ArrowLeftIcon  onClick={()=>removeItem(cartItem)} className={classes.arrowLeft}/>
             <span className={classes.propertyStyle}>{quantity}</span>
-            <ArrowRightIcon  className={classes.arrowRight}/>
-            <DeleteOutlineIcon className={classes.deleteStyle}/>
+            <ArrowRightIcon onClick={()=>addItem(cartItem)} className={classes.arrowRight}/>
+            <DeleteOutlineIcon onClick={()=>clearItem(cartItem)} className={classes.deleteStyle}/>
         </div>
     )
 }
@@ -81,4 +81,10 @@ const checkoutItemStyle = makeStyles({
     }
 })
 
-export default CheckoutItem;
+const mapDispatchToProps = dispatch=>({
+    addItem:item=>dispatch(addItem(item)),
+    clearItem:item=>dispatch(clearItem(item)),
+    removeItem:item=>dispatch(removeItem(item))
+})
+
+export default connect( null,mapDispatchToProps)(CheckoutItem);

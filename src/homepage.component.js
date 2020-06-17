@@ -8,7 +8,8 @@ import breadImage from './images/breads.JPG';
 import{Button} from "@material-ui/core";
 
 
-export default function HomePage () {
+
+export default function  HomePage () {
 const classes = homPageStyle();
 
   return ( <div className={classes.homePage}>
@@ -16,7 +17,7 @@ const classes = homPageStyle();
                 <div className={classes.categoryBeverage}>
                     <h1 className={classes.title}>Beverages</h1>
                     <br/><br/><br/><br/>
-                    <Button  variant='contained' style={{color:'#689f38'}} href='/beverages' className={classes.subtitle}>SHOP NOW</Button>
+                    <Button  variant='contained' style={{color:'#689f38'}}  href='/beverages'  className={classes.subtitle}>SHOP NOW</Button>
                 </div>
                 <div className={classes.categorySnacks} >
                     <h1 className={classes.title}>Snacks</h1>

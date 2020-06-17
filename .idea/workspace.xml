@@ -2,20 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8061d4c-c8ce-4e32-a0b9-d5ef4a00a3fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/CartIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/b01.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/cart/cart.actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/cart/cart.reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/cart/cart.types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/categories/BeveragesPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/categories/BreadsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/EachCategory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/EachFood.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/cartItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/checkoutPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/cart/cart.selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/cart/cart.util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/user/user.selector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/categories/beveragesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/categories/beveragesPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/categories/beveragesPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/categories/breads.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/categories/snacksPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/categories/SnacksPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase/firebase.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/signIn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homepage.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/homepage.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/root-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +118,7 @@
       <workItem from="1591481121570" duration="23000" />
       <workItem from="1591481171414" duration="752000" />
       <workItem from="1591482292716" duration="12416000" />
-      <workItem from="1591599958494" duration="44221000" />
+      <workItem from="1591599958494" duration="69780000" />
     </task>
     <servers />
   </component>
@@ -133,6 +145,12 @@
           <url>file://$PROJECT_DIR$/src/component/SignInPart.js</url>
           <line>91</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/checkoutPage.js</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

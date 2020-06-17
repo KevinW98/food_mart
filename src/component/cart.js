@@ -5,10 +5,12 @@ import CartItem from "./cartItem";
 import {connect} from 'react-redux';
 import {selectCartItems} from "../redux/cart/cart.selector";
 import {withRouter} from 'react-router-dom';
+import {toggleCartHidden} from "../redux/cart/cart.actions";
 
 
 
-const Cart =({cartItems,history})=>{
+const Cart =({cartItems,history,dispatch})=>{
+
     const classes = cartStyles();
   return(  <div className={classes.cartPage}>
       <div className={classes.items}>
@@ -19,7 +21,9 @@ const Cart =({cartItems,history})=>{
               })
           }
       </div>
-      <Button  onClick={()=>history.push('/checkout')} variant='contained' className={classes.buttonStyle}> CHECK OUT</Button>
+      <Button  onClick={()=>{history.push('/checkout');
+                             dispatch(toggleCartHidden());
+      }} variant='contained' className={classes.buttonStyle}> CHECK OUT</Button>
     </div>)
 }
 

@@ -16,6 +16,7 @@ import BeveragesPage from "./categories/BeveragesPage";
 import CheckoutPage from "./pages/checkoutPage";
 import {selectCurrentUser} from "./redux/user/user.selector";
 import {createStructuredSelector} from "reselect";
+import {toggleCartHidden} from "./redux/cart/cart.actions";
 
 
 class  App extends React.Component{

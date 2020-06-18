@@ -4,12 +4,10 @@ import {createStructuredSelector} from "reselect";
 import {selectCartItems,selectorCartTotal} from "../redux/cart/cart.selector";
 import {connect} from 'react-redux';
 import CheckoutItem from "../component/checkoutItem";
-
+import OrderPlaced from "../component/OrderPlaced";
 
 const CheckoutPage=({cartItems,total})=> {
     const classes = checkoutStyle();
- console.log(cartItems);
- console.log(total);
  return(
      <div>
          <span className={classes.titleStyle}>CHECKOUT</span>
@@ -31,6 +29,9 @@ const CheckoutPage=({cartItems,total})=> {
          })}
      </div>
          <div className={classes.totalStyle}>Total:${total}</div>
+
+        {cartItems.length==0 ?
+        null:<OrderPlaced />}
      </div>)
 
 
@@ -48,15 +49,15 @@ const checkoutStyle = makeStyles({
         position:'absolute',
         left:'34%',
         fontFamily:'Special Elite, cursive',
-        top:'12%',
+        top:'9%',
         fontSize:'45px'
     },
     itemsContainer:{
         position: 'absolute',
-        height:'50%',
+        height:'45%',
         width:'60%',
         left:'14%',
-        top:'34%',
+        top:'31%',
         overflow:'scroll',
         flex:'column',
         borderBottom:'1px solid black',
@@ -78,12 +79,12 @@ const checkoutStyle = makeStyles({
         width: '60%',
         left:'14%',
         height: '10%',
-        top:'24%',
+        top:'15%',
     },
     totalStyle:{
         position:'absolute',
         left:'60%',
-        bottom:'9%',
+        bottom:'15%',
         fontFamily:'Architects Daughter,cursive',
         fontWeight:'600',
         fontSize: '22px'

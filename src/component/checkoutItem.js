@@ -3,6 +3,7 @@ import {makeStyles} from "@material-ui/core/styles";
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+
 import {connect} from "react-redux";
 import {addItem,removeItem,clearItem} from "../redux/cart/cart.actions";
 
@@ -20,7 +21,7 @@ const CheckoutItem = ({cartItem,addItem,removeItem,clearItem})=>{
             <ArrowLeftIcon  onClick={()=>removeItem(cartItem)} className={classes.arrowLeft}/>
             <span className={classes.propertyStyle}>{quantity}</span>
             <ArrowRightIcon onClick={()=>addItem(cartItem)} className={classes.arrowRight}/>
-            <DeleteOutlineIcon onClick={()=>clearItem(cartItem)} className={classes.deleteStyle}/>
+            <DeleteOutlineIcon onClick={()=>{if(window.confirm('Delete this item?')){clearItem(cartItem)};}} className={classes.deleteStyle}/>
         </div>
     )
 }

@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8061d4c-c8ce-4e32-a0b9-d5ef4a00a3fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/categories/DiaryPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/categories/PreparedFoodPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/OrderPlaced.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/categories/diaryPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/categories/preparedFoodPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CartIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CartIcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/SignInPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/SignInPart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/checkoutItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/checkoutItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkoutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkoutPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.types.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +109,7 @@
       <workItem from="1591481121570" duration="23000" />
       <workItem from="1591481171414" duration="752000" />
       <workItem from="1591482292716" duration="12416000" />
-      <workItem from="1591599958494" duration="78959000" />
+      <workItem from="1591599958494" duration="89823000" />
     </task>
     <servers />
   </component>
@@ -118,12 +134,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/component/SignInPart.js</url>
-          <line>91</line>
+          <line>92</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/checkoutPage.js</url>
-          <line>41</line>
+          <line>42</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>

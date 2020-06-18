@@ -1,7 +1,8 @@
 import React from "react";
 import {withStyles} from "@material-ui/core/styles";
-import {Input,TextField,Button} from "@material-ui/core";
+import {TextField,Button} from "@material-ui/core";
 import {signInWithGoogle,auth} from "../firebase/firebase.utils";
+
 
 class signInPart extends React.Component{
     constructor(props){
@@ -19,7 +20,7 @@ class signInPart extends React.Component{
             await auth.signInWithEmailAndPassword(email,password);
             this.setState({email:'',password:''});
         }catch (error) {
-            console.log(error);
+              alert('Password and email do not match')
         }
 
     }

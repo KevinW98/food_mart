@@ -42,6 +42,7 @@ const cartStyles = makeStyles({
         display: 'flex',
         flexDirection:'column',
         border:'1px solid grey',
+        borderRadius:'10px'
 
     },
     emptyStyle:{
@@ -65,7 +66,10 @@ const cartStyles = makeStyles({
         bottom:'1%',
         marginTop:'auto',
         backgroundColor:'#eeeeee',
-        fontFamily:'Architects Daughter,cursive'
+        fontFamily:'Architects Daughter,cursive',
+        '&:hover':{
+            cursor:'pointer'
+        }
     }
 })
 

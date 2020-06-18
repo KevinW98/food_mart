@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import HomePage from "./homepage.component";
-import SnacksPage from './categories/SnacksPage'
-import diaryPage from "./categories/diaryPage";
-import preparedFoodPage from "./categories/preparedFoodPage";
+import SnacksPage from './categories/SnacksPage';
+import DiaryPage from "./categories/DiaryPage";
+import PreparedFoodPage from "./categories/PreparedFoodPage";
 import {Route,Redirect,Switch} from 'react-router-dom';
 import Header from "./component/header";
 import {auth,createUserProfile} from "./firebase/firebase.utils";
@@ -59,8 +59,8 @@ class  App extends React.Component{
         <Route exact path = '/checkout' component={CheckoutPage}/>
         <Route  path='/beverages' component={BeveragesPage}/>
         <Route  path='/snacks'  component={SnacksPage}></Route>
-        <Route  path='/diary' component={diaryPage} ></Route>
-        <Route  path='/preparedFood' component={preparedFoodPage}></Route>
+        <Route  path='/diary' component={DiaryPage} ></Route>
+        <Route  path='/preparedFood' component={PreparedFoodPage}></Route>
         <Route  path='/breads' component={BreadsPage}></Route>
         <Route exact path='/signIn' render={()=>
             this.props.currentUser?

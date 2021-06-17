@@ -1,6 +1,7 @@
 import React from "react";
 import {makeStyles} from "@material-ui/core/styles";
-import diaryImage from './images/diary.JPG';
+// import diaryImage from './images/diary.JPG';
+import diaryImage from '../src/images/diary.JPG'
 import beverageImage from './images/beverages.JPG';
 import snacksImage from './images/snacks.JPG';
 import preparedFoodImage from './images/preparedFood.JPG';

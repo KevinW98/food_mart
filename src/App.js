@@ -62,7 +62,7 @@ class  App extends React.Component{
         <Route  path='/diary' component={DiaryPage} ></Route>
         <Route  path='/preparedFood' component={PreparedFoodPage}></Route>
         <Route  path='/breads' component={BreadsPage}></Route>
-        <Route path='/signIn' render={()=>
+        <Route exact path='/signIn' render={()=>
             this.props.currentUser?
                 (<Redirect to='/'/>):
                 (<div>

@@ -24,7 +24,7 @@ const Header =({currentUser,hidden})=>{
                 {currentUser ?
                     <Button onClick={()=>auth.signOut()} className={classes.signIn}>Sign Out</Button>
                     :
-                    <Link to='signIn'>
+                    <Link to='/signIn'>
                     <Button className={classes.signIn} >Sign in</Button></Link>}
             </div>
             <div>

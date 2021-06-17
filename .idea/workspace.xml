@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8061d4c-c8ce-4e32-a0b9-d5ef4a00a3fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/categories/DiaryPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/categories/PreparedFoodPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/OrderPlaced.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/categories/diaryPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/categories/preparedFoodPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/CartIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CartIcon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/SignInPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/SignInPart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/checkoutItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/checkoutItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/checkoutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkoutPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homepage.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/homepage.component.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,9 +23,16 @@
   </component>
   <component name="ProjectId" id="1ctGjivt1ZDtmAfieUGd3JpsFxz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,23 +43,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Node.js.homepage.component.js">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -92,6 +73,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -109,25 +91,28 @@
       <workItem from="1591481121570" duration="23000" />
       <workItem from="1591481171414" duration="752000" />
       <workItem from="1591482292716" duration="12416000" />
-      <workItem from="1591599958494" duration="89823000" />
+      <workItem from="1591599958494" duration="90949000" />
+      <workItem from="1594003907743" duration="636000" />
+      <workItem from="1602860326833" duration="825000" />
+      <workItem from="1615628805955" duration="4000" />
+      <workItem from="1623909441690" duration="347000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -140,7 +125,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/checkoutPage.js</url>
           <line>42</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
